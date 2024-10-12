@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html leng="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name  = "viewport" content = "width=device-width, initial-scale=1.0" />  
+        <title>Color Picker Project </title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+           <header> <h1>Color Picker </h1>
+        </header>
+            <div class="plalate">
+                <div class="color" style="background-color: #ff5733;" ="#ff5733"></div>
+                <div class="color" style="background-color: #33ff57;" data-hex="#33ff57"></div>
+                <div class="color" style="background-color: #3357ff;" data-hex="#3357ff"></div>
+                <div class="color" style="background-color: #ffff33;" data-hex="#ffff33"></div>
+                <div class="color" style="background-color: #ff33ff;" data-hex="#ff33ff"></div>
+                <div class="color" style="background-color: #33ffff;" data-hex="#33ffff"></div>
+                <div class="color" style="background-color: #333333;" data-hex="#333333"></div>
+                <div class="color" style="background-color: #dadada;" data-hex="#ffffff"></div>
+                <div class="color" style="background-color: #800080;" data-hex="#800080"></div>
+                <div class="color" style="background-color: #ffd700;" data-hex="#ffd700"></div>
+            </div>
+            <div class="selected-color-display">
+                <p>Selected Color: <span id="selectedColorHexa"> #ffffff</span>
+                    <button id="copyHexBtn">copy</button>
+                </p>
+                <div class="color-box" id="colorBox" style="background-color: #fff;">
+                </div>
+                <div class="custom-color">
+                    <input type="text" id="customHexInput" placeholder="Enter Custom Hexa Code">
+                    <button id="addCustomColorButton">Add Custome Color</button> 
+                </div>
+            </div>
+        </div>
+       
+        
+    <script src="./app.js"></script>
+    </body>
+</html>

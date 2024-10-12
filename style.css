@@ -1,0 +1,112 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    margin-bottom: 20px;
+}
+header h1{
+    color: #102030
+}
+
+.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+.plalate{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    max-width: 400px;
+}
+.color{
+width: 50px;
+height: 50px;
+border-radius: 2px;
+cursor: pointer;
+transition: transform 0.4s;
+
+}
+.color:hover{
+    transform: scale(1.1);
+}
+.selected-color-display{
+    margin-top: 20px;
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+.color-box{
+    width: 100px;
+    height: 100px;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+
+}
+.custom-color{
+    margin-top: 20px;
+
+}
+#customHexInput{
+    padding: 10px;
+    width: 52%;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    outline: none;
+}
+button{
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s transform 0.2s boxshadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+button:hover{
+    background-color: #0056b3;
+}
+#copyHexBtn{
+    background-color: #28a745;
+    margin-left: 10px;
+}
+#copyHexBtn:hover{
+    background-color: #218838;
+}
+#addCustomColorButton{
+    background-color: #16acc3;
+    margin-top: 10px;
+}
+#addCustomColorButton:hover{
+    background-color: #138496;
+}
+#colorPicker{
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
